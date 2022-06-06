@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zeri di funzioni</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Function drawer & ...</h1>
+        </header>
+
+        <div id="bianco"></div>
+
+        <form>
+            <label id="f_x_label">F (x) :</label>
+            <input id="f_x_input" name="funzione" type="text" value="">
+            <label id="x_t_label">x_t :</label>
+            <input id="x_t_input" name="x_t" type="text" value="x tangente iniziale">
+
+            <input id="button" type="button" onclick="calculate(this.form)" value="Calculate">
+
+            <img id="impostazioni_icon" src="./impostazioni_small.png" onclick="open_dialog()" alt="icona impostazioni">
+        </form>
+
+        <dialog id="dialog">
+            <form>
+                <label>Graph height :</label>
+                <input id="dialog_height" type="number">
+                <br>
+                <br>
+                <label>Unit :</label>
+                <input id="dialog_unit" type="number">
+                <br>
+                <br>
+                <label>Number of tangent :</label>
+                <input id="dialog_tan" type="number">
+                <br>
+                <br>
+                <center>
+                    <input id="dialog_apply" type="button" onclick="close_dialog(this.form)" value="Apply">
+                </center>
+            </form>
+        </dialog>
+
+        <canvas id="myCanvas"></canvas>
+
+        <center>
+            <p style="color: red;">Zero is in :</p>
+            <p id="resoult"></p>
+        </center>
+
+        <script src="main.js"></script>
+    </body>
+</html>

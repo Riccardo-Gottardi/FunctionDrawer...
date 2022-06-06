@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zeri di funzioni</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <div class="left">
+                <lavel>F (x) :</lavel>
+                <input type="text" name="funzione" value="">
+            </div>
+            <div class="right">
+                <label>[a, b] :</label>
+                <input type="number" name="a">
+                <input type="number" name="b">
+            </div>
+            <br><br>
+            <center>
+                <button class="center" onclick="prendi(this.form)">Calculate</button>
+            </center>
+        </form>
+
+        <br>
+
+        <canvas id="myCanvas"></canvas>
+        <script src="setUp_mathStuff.js"></script>
+        <script src="functions_graph.js"></script>
+        <script src="tangent.js"></script>
+        <script src="executionList.js"></script>
+    </body>
+</html>

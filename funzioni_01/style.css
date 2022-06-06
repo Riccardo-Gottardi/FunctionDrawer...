@@ -1,0 +1,38 @@
+*{
+    font-family: Verdana;
+    font-size: 12pt;
+    vertical-align: middle;
+}
+body{
+    margin: 0px;
+}
+
+/* form */
+form{
+    padding: 15px 20px 0px 20px;
+}
+input{
+    width: 80px;
+    border: solid 1px gainsboro;
+    border-radius: 3px;
+}
+button{
+    color: white;
+    background-color: rgb(17, 196, 62);
+    padding: 3px 8px 3px 8px;
+    border: solid 1px gainsboro;
+    border-radius: 3px;
+}
+.left{
+    display: inline;
+    float: left;
+}
+.right{
+    display: inline;
+    float: right;
+}
+
+/* canvas */
+#myCanvas{
+    border: solid 2px black;
+}
